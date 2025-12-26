@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Spacall</string>
+    <string name="app_logo">App Logo</string>
+    <string name="spa_call">SPA-CALL</string>
+    <string name="find_your_perfect">Find your perfect</string>
+    <string name="massage_match">massage match</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- Phone Activity -->
+    <string name="my_mobile">My mobile</string>
+    <string name="phone_description">Please enter your valid phone number. We will send you a 4-digit code to verify your account.</string>
+    <string name="country_code_ph">(+63)</string>
+    <string name="country_flag">Country Flag</string>
+    <string name="dropdown">Dropdown</string>
+    <string name="phone_hint">955 285 1475</string>
+    <string name="continue_text">Continue</string>
+
+    <!-- OTP Activity -->
+    <string name="back">Back</string>
+    <string name="default_timer">00:42</string>
+    <string name="otp_description">Type the verification code\nwe\'ve sent you</string>
+    <string name="send_again">Send again</string>
+    <string name="delete">Delete</string>
+    <string name="num_0">0</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_details">Profile details</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="first_name">First name</string>
+    <string name="first_name_hint">David</string>
+    <string name="last_name">Last name</string>
+    <string name="last_name_hint">Peterson</string>
+    <string name="choose_birthday">Choose birthday date</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Birthday Dialog -->
+    <string name="birthday_title">Birthday</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+</resources>
