@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- app/src/main/res/layout/activity_filter.xml -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -138,37 +140,114 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Advanced Filter Options -->
+    <!-- Advanced Filter Container (Centered) -->
     <LinearLayout
-        android:id="@+id/advancedFilterLayout"
-        android:layout_width="0dp"
+        android:id="@+id/advancedFilterContainer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/ageSpinner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Advanced Filter Text -->
         <TextView
             android:id="@+id/advancedFilterText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/advance_filter_options"
+            android:text="@string/advance_filter"
             android:textColor="#FF5C8D"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"/>
 
-        <ImageView
-            android:id="@+id/advancedFilterArrow"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_arrow_right"
-            android:contentDescription="@string/navigate"/>
+        <!-- Overlapping Avatars Container -->
+        <FrameLayout
+            android:id="@+id/avatarsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp">
+
+            <!-- Avatar 1 (Leftmost) -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="0dp">
+
+                <ImageView
+                    android:id="@+id/avatar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/avatar_circle_1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/avatar_icon"/>
+            </FrameLayout>
+
+            <!-- Avatar 2 -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp">
+
+                <ImageView
+                    android:id="@+id/avatar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/avatar_circle_2"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/avatar_icon"/>
+            </FrameLayout>
+
+            <!-- Avatar 3 -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="80dp">
+
+                <ImageView
+                    android:id="@+id/avatar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/avatar_circle_3"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/avatar_icon"/>
+            </FrameLayout>
+
+            <!-- Avatar 4 -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="120dp">
+
+                <ImageView
+                    android:id="@+id/avatar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/avatar_circle_4"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/avatar_icon"/>
+            </FrameLayout>
+
+            <!-- VIP Badge -->
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="160dp">
+
+                <ImageView
+                    android:id="@+id/vipBadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vip_badge_circle"
+                    android:contentDescription="@string/vip_badge"/>
+            </FrameLayout>
+
+        </FrameLayout>
 
     </LinearLayout>
 

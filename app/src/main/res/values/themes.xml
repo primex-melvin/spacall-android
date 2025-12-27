@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/values/themes.xml -->
+
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Spacall" parent="Theme.MaterialComponents.DayNight.NoActionBar">

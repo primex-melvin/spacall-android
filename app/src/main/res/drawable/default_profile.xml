@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- app/src/main/res/drawable/default_profile.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="180dp"
     android:height="180dp"

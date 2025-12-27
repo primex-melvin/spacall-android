@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/drawable/ic_mastercard.xml -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="32dp"
+    android:viewportWidth="48"
+    android:viewportHeight="32">
+
+    <!-- Red circle -->
+    <path
+        android:fillColor="#EB001B"
+        android:pathData="M28,16 m-12,0 a12,12 0,1,1 24,0 a12,12 0,1,1 -24,0"/>
+
+    <!-- Orange circle -->
+    <path
+        android:fillColor="#F79E1B"
+        android:pathData="M32,16 m-12,0 a12,12 0,1,1 24,0 a12,12 0,1,1 -24,0"/>
+</vector>

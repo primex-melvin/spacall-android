@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- app/src/main/res/drawable/avatar_circle_3.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White border -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/>
+            <size android:width="60dp" android:height="60dp"/>
+        </shape>
+    </item>
+    <!-- Inner colored circle -->
+    <item
+        android:top="3dp"
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp">
+        <shape android:shape="oval">
+            <solid android:color="#4ECDC4"/>
+        </shape>
+    </item>
+</layer-list>

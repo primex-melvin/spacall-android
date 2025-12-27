@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/values/strings.xml -->
+
 <resources>
     <string name="app_name">Spacall</string>
     <string name="app_logo">App Logo</string>
@@ -63,7 +66,28 @@
     <string name="type_of_massage">Type of massage</string>
     <string name="gender_of_therapist">Gender of massage therapists</string>
     <string name="preferred_age">Preferred age</string>
-    <string name="advance_filter_options">Advance Filter\nOptions</string>
+    <string name="advance_filter">Advance Filter</string>
     <string name="reset">Reset</string>
     <string name="navigate">Navigate</string>
+    <string name="avatar_icon">Avatar Icon</string>
+    <string name="vip_badge">VIP Badge</string>
+
+    <!-- Payment Activity -->
+    <string name="payment">Payment</string>
+    <string name="payment_description">Complete your payment to enjoy the most</string>
+    <string name="saved_payment_options">Saved payment options</string>
+    <string name="hdfc_credit_card">HDFC Credit Card</string>
+    <string name="hdfc_card_number">**** **** **** 5229</string>
+    <string name="icici_credit_card">ICICI Credit Card</string>
+    <string name="icici_card_number">**** **** **** 4421</string>
+    <string name="gcash">Gcash</string>
+    <string name="maya">Maya</string>
+    <string name="linked">Linked</string>
+    <string name="add_new_payment_option">Add New Payment Option</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="mastercard_logo">Mastercard Logo</string>
+    <string name="visa_logo">Visa Logo</string>
+    <string name="gcash_icon">Gcash Icon</string>
+    <string name="maya_icon">Maya Icon</string>
+    <string name="add_payment">Add Payment</string>
 </resources>

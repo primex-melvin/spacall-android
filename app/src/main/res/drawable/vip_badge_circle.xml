@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- app/src/main/res/drawable/vip_badge_circle.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White border -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/>
+            <size android:width="60dp" android:height="60dp"/>
+        </shape>
+    </item>
+    <!-- Gold background -->
+    <item
+        android:top="3dp"
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFD700"/>
+        </shape>
+    </item>
+    <!-- Inner pink circle -->
+    <item
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF5C8D"/>
+        </shape>
+    </item>
+</layer-list>
