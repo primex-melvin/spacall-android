@@ -28,6 +28,7 @@ class BirthdayBottomSheetDialog : BottomSheetDialogFragment() {
     private var selectedYear = 1995  // Default to 1995
 
     private var onDateSelectedListener: ((String) -> Unit)? = null
+    private var onSaveClickListener: (() -> Unit)? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,8 +80,18 @@ class BirthdayBottomSheetDialog : BottomSheetDialogFragment() {
                 selectedDay,
                 selectedYear
             )
+
+            // First, update the date in the parent activity
             onDateSelectedListener?.invoke(formattedDate)
+
+            // Dismiss the dialog first
             dismiss()
+
+            // Then trigger the save action (navigation will happen in parent)
+            // Use post to ensure dialog is dismissed first
+            view?.postDelayed({
+                onSaveClickListener?.invoke()
+            }, 100)
         }
     }
 
@@ -127,9 +138,21 @@ class BirthdayBottomSheetDialog : BottomSheetDialogFragment() {
                     }
 
                     dayView.setOnClickListener {
+                        // Update selected date
                         selectedDay = day
                         selectedMonth = currentMonth
                         selectedYear = currentYear
+
+                        // Format and notify immediately when day is clicked
+                        val formattedDate = String.format(
+                            "%02d/%02d/%04d",
+                            selectedMonth + 1,
+                            selectedDay,
+                            selectedYear
+                        )
+                        onDateSelectedListener?.invoke(formattedDate)
+
+                        // Refresh calendar to show selection
                         updateCalendar()
                     }
 
@@ -165,6 +188,10 @@ class BirthdayBottomSheetDialog : BottomSheetDialogFragment() {
 
     fun setOnDateSelectedListener(listener: (String) -> Unit) {
         onDateSelectedListener = listener
+    }
+
+    fun setOnSaveClickListener(listener: () -> Unit) {
+        onSaveClickListener = listener
     }
 
     companion object {

@@ -50,4 +50,20 @@
     <string name="previous">Previous</string>
     <string name="next">Next</string>
     <string name="save">Save</string>
+
+    <!-- Upload ID Activity -->
+    <string name="upload_id">Upload ID</string>
+    <string name="upload_id_description">We strongly give full freedom to our users, but to avoid any kind of mishap &amp; nuisance we reccomend you to provide a ID proof for safety &amp; security</string>
+    <string name="upload_document">Upload\nDocument</string>
+    <string name="document_icon">Document Icon</string>
+
+    <!-- Filter Activity -->
+    <string name="filter_options">Filter Options</string>
+    <string name="filter_description">Manage and set your preferences to find the best match for you.</string>
+    <string name="type_of_massage">Type of massage</string>
+    <string name="gender_of_therapist">Gender of massage therapists</string>
+    <string name="preferred_age">Preferred age</string>
+    <string name="advance_filter_options">Advance Filter\nOptions</string>
+    <string name="reset">Reset</string>
+    <string name="navigate">Navigate</string>
 </resources>

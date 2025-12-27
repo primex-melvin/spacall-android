@@ -37,6 +37,14 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
 
+        <activity
+            android:name=".UploadIdActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".FilterActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
