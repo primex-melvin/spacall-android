@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- app/src/main/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ph.spacall.android">
@@ -49,6 +51,15 @@
 
         <activity
             android:name=".PaymentActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".EnterAmountActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".ConfirmPaymentActivity"
             android:exported="false"/>
 
     </application>

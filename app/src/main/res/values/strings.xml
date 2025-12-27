@@ -90,4 +90,30 @@
     <string name="gcash_icon">Gcash Icon</string>
     <string name="maya_icon">Maya Icon</string>
     <string name="add_payment">Add Payment</string>
+
+    <!-- Enter Amount Activity -->
+    <string name="enter_amount">Enter Amount</string>
+    <string name="mastercard_8604">MasterCard 8604</string>
+    <string name="payment_icon">Payment Icon</string>
+    <string name="default_amount">₱0</string>
+    <string name="current_balance">Current balance: ₱20,150.11</string>
+    <string name="amount_50">50</string>
+    <string name="amount_100">100</string>
+    <string name="amount_200">200</string>
+    <string name="amount_300">300</string>
+
+    <!-- Payment Verification Dialog -->
+    <string name="close">Close</string>
+    <string name="review_and_confirm">Review and confirm</string>
+    <string name="payment_method">Payment method</string>
+    <string name="top_up_amount">Top-up amount</string>
+    <string name="total">Total</string>
+    <string name="top_up">Top up</string>
+
+    <!-- Confirm Payment Activity -->
+    <string name="payment_confirmed">Payment Confirmed</string>
+    <string name="payment_success_description">Your payment has been processed successfully!</string>
+    <string name="proceed_text">Proceed</string>
+    <string name="success_icon">Success Icon</string>
+    <string name="checkmark">Checkmark</string>
 </resources>

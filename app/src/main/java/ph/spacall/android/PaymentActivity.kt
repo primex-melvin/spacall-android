@@ -2,6 +2,7 @@
 
 package ph.spacall.android
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -87,18 +88,15 @@ class PaymentActivity : AppCompatActivity() {
         // Add new payment option
         addNewPaymentButton.setOnClickListener {
             Toast.makeText(this, "Add new payment option coming soon", Toast.LENGTH_SHORT).show()
-            // TODO: Navigate to add payment screen
         }
 
         // Pay Now button
         payNowButton.setOnClickListener {
             if (selectedPaymentMethod.isNotEmpty()) {
-                Toast.makeText(
-                    this,
-                    "Processing payment with: $selectedPaymentMethod",
-                    Toast.LENGTH_LONG
-                ).show()
-                // TODO: Process payment
+                // Navigate to Enter Amount screen
+                val intent = Intent(this, EnterAmountActivity::class.java)
+                intent.putExtra("payment_method", selectedPaymentMethod)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Please select a payment method", Toast.LENGTH_SHORT).show()
             }

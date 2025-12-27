@@ -238,9 +238,6 @@ class FilterActivity : AppCompatActivity() {
         // Advanced Filter Text
         advancedFilterText.setOnClickListener {
             Toast.makeText(this, "Advanced Filter Options coming soon", Toast.LENGTH_SHORT).show()
-            // TODO: Navigate to advanced filter screen
-            // val intent = Intent(this, AdvancedFilterActivity::class.java)
-            // startActivity(intent)
         }
 
         // Continue button
@@ -249,18 +246,12 @@ class FilterActivity : AppCompatActivity() {
             val selectedGender = genderSpinner.selectedItem.toString()
             val selectedAge = ageSpinner.selectedItem.toString()
 
-            Toast.makeText(
-                this,
-                "Filters applied:\n$selectedMassage\n$selectedGender\n$selectedAge",
-                Toast.LENGTH_SHORT
-            ).show()
-
-            // TODO: Navigate to next screen with filter data
-            // val intent = Intent(this, NextActivity::class.java)
-            // intent.putExtra("massage_type", selectedMassage)
-            // intent.putExtra("gender", selectedGender)
-            // intent.putExtra("age_range", selectedAge)
-            // startActivity(intent)
+            // Navigate to Payment screen
+            val intent = Intent(this, PaymentActivity::class.java)
+            intent.putExtra("massage_type", selectedMassage)
+            intent.putExtra("gender", selectedGender)
+            intent.putExtra("age_range", selectedAge)
+            startActivity(intent)
         }
     }
 
