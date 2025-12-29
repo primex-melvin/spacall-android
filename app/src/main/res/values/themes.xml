@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- app/src/main/res/values/themes.xml -->
-
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Theme.Spacall" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/pink_primary</item>
-        <item name="colorPrimaryVariant">@color/pink_primary</item>
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/lime_accent</item>
-        <item name="colorSecondaryVariant">@color/lime_accent</item>
+
+        <item name="colorSecondary">@color/gold_accent</item>
+        <item name="colorSecondaryVariant">@color/gold_dark</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+
         <item name="android:statusBarColor">@color/background_gray</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <style name="CircleImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
 </resources>

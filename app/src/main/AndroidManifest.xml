@@ -89,6 +89,11 @@
             android:exported="false"
             android:configChanges="orientation|screenSize"/>
 
+        <activity
+            android:name=".TherapistDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".SearchingTherapistsActivity" />
+
     </application>
 
 </manifest>

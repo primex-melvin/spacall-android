@@ -1,7 +1,6 @@
-// app/src/main/java/ph/spacall/android/TherapistAdapter.kt
-
 package ph.spacall.android
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
@@ -27,46 +26,6 @@ class TherapistAdapter(
         val reviewsText: TextView = itemView.findViewById(R.id.therapistReviews)
         val distanceText: TextView = itemView.findViewById(R.id.therapistDistance)
         val specialtyText: TextView = itemView.findViewById(R.id.therapistSpecialty)
-
-        fun bind(therapist: Therapist) {
-            nameText.text = therapist.name
-            ratingText.text = "★ ${therapist.rating}"
-            reviewsText.text = "(${therapist.reviews} reviews)"
-            distanceText.text = therapist.distance
-            specialtyText.text = therapist.specialty
-
-            // Load avatar image using Glide
-            Glide.with(itemView.context)
-                .load(therapist.avatarUrl)
-                .circleCrop()
-                .listener(object : RequestListener<Drawable> {
-                    override fun onLoadFailed(
-                        e: GlideException?,
-                        model: Any?,
-                        target: Target<Drawable>,
-                        isFirstResource: Boolean
-                    ): Boolean {
-                        // If image fails to load, show default avatar
-                        avatarImage.setImageResource(R.drawable.default_profile)
-                        return false
-                    }
-
-                    override fun onResourceReady(
-                        resource: Drawable,
-                        model: Any,
-                        target: Target<Drawable>?,
-                        dataSource: DataSource,
-                        isFirstResource: Boolean
-                    ): Boolean {
-                        return false
-                    }
-                })
-                .into(avatarImage)
-
-            itemView.setOnClickListener {
-                onTherapistClick(therapist)
-            }
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TherapistViewHolder {
@@ -76,7 +35,59 @@ class TherapistAdapter(
     }
 
     override fun onBindViewHolder(holder: TherapistViewHolder, position: Int) {
-        holder.bind(therapists[position])
+        val therapist = therapists[position]
+
+        // 1. Bind Data to Views
+        holder.nameText.text = therapist.name
+        holder.ratingText.text = "★ ${therapist.rating}"
+        holder.reviewsText.text = "(${therapist.reviews} reviews)"
+        holder.distanceText.text = therapist.distance
+        holder.specialtyText.text = therapist.specialty
+
+        // 2. Load Avatar Image using Glide
+        Glide.with(holder.itemView.context)
+            .load(therapist.avatarUrl)
+            .circleCrop()
+            .listener(object : RequestListener<Drawable> {
+                override fun onLoadFailed(
+                    e: GlideException?,
+                    model: Any?,
+                    target: Target<Drawable>,
+                    isFirstResource: Boolean
+                ): Boolean {
+                    // If image fails to load, show default avatar
+                    holder.avatarImage.setImageResource(R.drawable.default_profile)
+                    return false
+                }
+
+                override fun onResourceReady(
+                    resource: Drawable,
+                    model: Any,
+                    target: Target<Drawable>?,
+                    dataSource: DataSource,
+                    isFirstResource: Boolean
+                ): Boolean {
+                    return false
+                }
+            })
+            .into(holder.avatarImage)
+
+        // 3. Handle Click to Open Dynamic Profile Detail Page
+        holder.itemView.setOnClickListener {
+            // First, trigger the existing map centering logic if needed
+            onTherapistClick(therapist)
+
+            // Then, launch the Detail Activity
+            val intent = Intent(holder.itemView.context, TherapistDetailActivity::class.java)
+
+            // Pass the specific data to the new page
+            intent.putExtra("EXTRA_NAME", therapist.name)
+            intent.putExtra("EXTRA_SPECIALTY", therapist.specialty)
+            intent.putExtra("EXTRA_DISTANCE", therapist.distance)
+
+            // Start the new page
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = therapists.size

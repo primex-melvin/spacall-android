@@ -61,6 +61,10 @@ dependencies {
     // CoordinatorLayout
     implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
 
+    implementation("jp.wasabeef:glide-transformations:4.3.0")
+    // GPU library (needed for some blurs)
+    implementation("jp.co.cyberagent.android:gpuimage:2.1.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -12,6 +12,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">@android:color/transparent</color>
 
+    <color name="gold_primary">#D4AF37</color>
+    <color name="gold_dark">#AA8C2C</color>
+    <color name="gold_light">#F3E5AB</color>
+    <color name="gold_accent">#FFD700</color>
+
     <!-- Brand Colors - Updated Gold Theme (Adjusted from Versace) -->
     <color name="gold">#D4AF37</color>
     <color name="brand_primary">#D6B139</color>        <!-- Main gold - slightly different from Versace -->
