@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/layout/item_therapist.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/background_light">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Therapist Avatar with Gold Border -->
+        <FrameLayout
+            android:id="@+id/avatarContainer"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/therapistAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/default_profile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/therapist_avatar_border"
+                android:contentDescription="@string/therapist_avatar"/>
+
+        </FrameLayout>
+
+        <!-- Therapist Name -->
+        <TextView
+            android:id="@+id/therapistName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Maria Santos"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/avatarContainer"
+            app:layout_constraintStart_toEndOf="@id/avatarContainer"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Specialty -->
+        <TextView
+            android:id="@+id/therapistSpecialty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Thai Massage"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/therapistName"
+            app:layout_constraintStart_toEndOf="@id/avatarContainer"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Rating and Reviews Container -->
+        <LinearLayout
+            android:id="@+id/ratingContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/therapistSpecialty"
+            app:layout_constraintStart_toEndOf="@id/avatarContainer">
+
+            <!-- Rating -->
+            <TextView
+                android:id="@+id/therapistRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★ 4.8"
+                android:textColor="@color/gold"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <!-- Reviews -->
+            <TextView
+                android:id="@+id/therapistReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="(156 reviews)"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"/>
+
+            <!-- Distance -->
+            <TextView
+                android:id="@+id/therapistDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="• 0.8 km"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

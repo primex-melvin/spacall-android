@@ -121,4 +121,26 @@
     <string name="you_are_now_vip">You are now VIP</string>
     <string name="vip_success_description">Congratulations! Your account is now VIP.\nEnjoy your new privileges and a more\ntailored experience.</string>
     <string name="start_using_vip">Start using VIP</string>
+
+    <!-- Enable Location Page Strings -->
+    <string name="enable_location">Enable Location</string>
+    <string name="location_description">We need your location to find the best massage therapists near you and provide accurate service delivery.</string>
+    <string name="enable_location_button">Enable Location</string>
+    <string name="skip">Skip for Now</string>
+    <string name="location_icon">Location Icon</string>
+
+    <!-- Searching Therapists Page Strings -->
+    <string name="searching_massage_therapists">Searching massage therapists</string>
+    <string name="emergency">Emergency</string>
+    <string name="map_view">Map View</string>
+    <string name="your_location">Your Location</string>
+    <string name="list_view">List View</string>
+    <string name="home">Home</string>
+    <string name="booking_best_service">Booking the best service for you</string>
+    <string name="processing_request_description">We\'re currently processing your request. You can also select which of these available therapists you like.</string>
+    <string name="therapist_avatar">Therapist Avatar</string>
+
+    <!-- Map Strings -->
+    <string name="therapist_location">Therapist Location</string>
+
 </resources>

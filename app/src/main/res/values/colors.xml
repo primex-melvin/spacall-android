@@ -13,6 +13,7 @@
     <color name="transparent">@android:color/transparent</color>
 
     <!-- Brand Colors - Updated Gold Theme (Adjusted from Versace) -->
+    <color name="gold">#D4AF37</color>
     <color name="brand_primary">#D6B139</color>        <!-- Main gold - slightly different from Versace -->
     <color name="brand_secondary">#F6E7C5</color>      <!-- Light gold - slightly different -->
     <color name="brand_surface_light">#FFF9E6</color>  <!-- Cream background -->

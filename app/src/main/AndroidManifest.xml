@@ -5,7 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ph.spacall.android">
 
+    <!-- Internet permission for map tiles -->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Location permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Network state for osmdroid -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Write external storage for osmdroid cache (optional) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +29,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Spacall"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
         <activity
@@ -61,6 +75,19 @@
         <activity
             android:name=".ConfirmPaymentActivity"
             android:exported="false"/>
+
+        <activity
+            android:name=".VipSuccessActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".EnableLocationActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SearchingTherapistsActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
 
     </application>
 

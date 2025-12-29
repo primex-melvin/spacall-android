@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/drawable/therapist_pin_1.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Circle with Gold Border -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/gold"/>
+            <size android:width="48dp" android:height="48dp"/>
+        </shape>
+    </item>
+    <!-- Inner Circle -->
+    <item
+        android:left="3dp"
+        android:top="3dp"
+        android:right="3dp"
+        android:bottom="3dp">
+        <shape android:shape="oval">
+            <solid android:color="#FF6B9D"/>
+        </shape>
+    </item>
+</layer-list>

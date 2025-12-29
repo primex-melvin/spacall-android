@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/drawable/ic_location_pin.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+
+    <!-- Gold Circle Background -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M90,90m-80,0a80,80 0,1 1,160 0a80,80 0,1 1,-160 0"/>
+
+    <!-- Location Pin Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,50C78.954,50 70,58.954 70,70C70,85 90,110 90,110C90,110 110,85 110,70C110,58.954 101.046,50 90,50ZM90,77C86.134,77 83,73.866 83,70C83,66.134 86.134,63 90,63C93.866,63 97,66.134 97,70C97,73.866 93.866,77 90,77Z"/>
+</vector>

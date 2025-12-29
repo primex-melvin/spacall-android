@@ -49,6 +49,18 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     kapt("com.github.bumptech.glide:compiler:4.16.0")
 
+    // OpenStreetMap (osmdroid) - Free mapping library
+    implementation("org.osmdroid:osmdroid-android:6.1.18")
+
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+
+    // CardView
+    implementation("androidx.cardview:cardview:1.0.0")
+
+    // CoordinatorLayout
+    implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

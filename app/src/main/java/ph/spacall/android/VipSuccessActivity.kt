@@ -27,11 +27,11 @@ class VipSuccessActivity : AppCompatActivity() {
     }
 
     private fun setupListeners() {
-        // Start using VIP button
+        // Start using VIP button - Navigate to Enable Location page
         startUsingVipButton.setOnClickListener {
-            // TODO: Navigate to main VIP dashboard or home screen
-            // For now, finish all activities and return to main
-            finishAffinity()
+            val intent = Intent(this, EnableLocationActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

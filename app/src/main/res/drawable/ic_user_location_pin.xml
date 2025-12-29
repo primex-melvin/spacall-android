@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/drawable/ic_user_location_pin.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Outer White Circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"/>
+
+    <!-- Inner Blue Circle -->
+    <path
+        android:fillColor="#4285F4"
+        android:pathData="M24,24m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"/>
+</vector>
