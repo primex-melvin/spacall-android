@@ -15,7 +15,7 @@
         android:left="3dp"
         android:right="3dp">
         <shape android:shape="oval">
-            <solid android:color="@color/avatar_pink"/>
+            <solid android:color="@color/avatar_yellow"/>
         </shape>
     </item>
 </layer-list>

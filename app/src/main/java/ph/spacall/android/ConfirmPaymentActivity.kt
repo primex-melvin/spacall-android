@@ -2,6 +2,7 @@
 
 package ph.spacall.android
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -46,9 +47,11 @@ class ConfirmPaymentActivity : AppCompatActivity() {
     private fun setupListeners() {
         // Proceed button
         proceedButton.setOnClickListener {
-            // TODO: Navigate to next screen or complete the flow
-            // For now, just finish all activities and go back to main
-            finishAffinity()
+            // Navigate to VIP Success screen
+            val intent = Intent(this, VipSuccessActivity::class.java)
+            startActivity(intent)
+            // Finish this activity so user can't go back
+            finish()
         }
     }
 }

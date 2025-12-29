@@ -2,6 +2,6 @@
 <!-- app/src/main/res/drawable/avatar_2.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <solid android:color="@color/avatar_pink"/>
+    <solid android:color="@color/avatar_yellow"/>
     <size android:width="48dp" android:height="48dp"/>
 </shape>

@@ -2,6 +2,7 @@
 <!-- app/src/main/res/values/colors.xml -->
 
 <resources>
+    <!-- Standard Material Colors (Keep for system compatibility) -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -11,29 +12,37 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">@android:color/transparent</color>
 
-    <!-- Brand Colors -->
-    <color name="brand_primary">#FF5C8D</color>
-    <color name="brand_secondary">#FFB3C8</color>
-    <color name="brand_surface_light">#FFEFF5</color>
-    <color name="avatar_pink">#E85D75</color>
-    <color name="lime_accent">#C6F806</color>
+    <!-- Brand Colors - Updated Gold Theme (Adjusted from Versace) -->
+    <color name="brand_primary">#D6B139</color>        <!-- Main gold - slightly different from Versace -->
+    <color name="brand_secondary">#F6E7C5</color>      <!-- Light gold - slightly different -->
+    <color name="brand_surface_light">#FFF9E6</color>  <!-- Cream background -->
+    <color name="avatar_yellow">#D6B139</color>        <!-- Same as brand_primary -->
+    <color name="lime_accent">#C6F806</color>          <!-- Bright lime green -->
 
     <!-- Text Colors -->
-    <color name="text_primary">#FF000000</color>
-    <color name="text_secondary">#666666</color>
-    <color name="text_hint">#999999</color>
-    <color name="text_wallet_brand">#4A3F8F</color>
-    <color name="text_link_blue">#4A90E2</color>
+    <color name="text_primary">#FF000000</color>       <!-- Black text -->
+    <color name="text_secondary">#666666</color>       <!-- Gray text -->
+    <color name="text_hint">#999999</color>            <!-- Light gray hints -->
+    <color name="text_wallet_brand">#4A3F8F</color>    <!-- Purple for Gcash/Maya -->
+    <color name="text_link_blue">#4A90E2</color>       <!-- Blue for links -->
 
     <!-- UI Element Colors -->
-    <color name="stroke_light">#E0E0E0</color>
-    <color name="background_light">#F5F5F5</color>
-    <color name="icon_gray">#666666</color>
+    <color name="stroke_light">#E0E0E0</color>         <!-- Light borders -->
+    <color name="background_light">#F5F5F5</color>     <!-- Light gray background -->
+    <color name="icon_gray">#666666</color>            <!-- Gray icons -->
 
-    <!-- Legacy colors for backward compatibility -->
-    <color name="pink_primary">#FF5C8D</color>
-    <color name="pink_light">#FFB3C8</color>
-    <color name="background_gray">#F5F5F5</color>
-    <color name="gray_light">#E0E0E0</color>
-    <color name="text_gray">#666666</color>
+    <!-- Input & Form Colors (Future use) -->
+    <color name="input_background">#2F2F2F</color>     <!-- Dark input background -->
+    <color name="input_border">#404040</color>         <!-- Dark input border -->
+    <color name="input_ring">#04AF37</color>           <!-- Green focus ring -->
+
+    <!-- Semantic Colors (Future use) -->
+    <color name="destructive">#EF4444</color>          <!-- Red for delete/error actions -->
+
+    <!-- Legacy Colors (Backward compatibility) -->
+    <color name="pink_primary">#D6B139</color>         <!-- Maps to brand_primary -->
+    <color name="pink_light">#F6E7C5</color>           <!-- Maps to brand_secondary -->
+    <color name="background_gray">#F5F5F5</color>      <!-- Maps to background_light -->
+    <color name="gray_light">#E0E0E0</color>           <!-- Maps to stroke_light -->
+    <color name="text_gray">#666666</color>            <!-- Maps to text_secondary -->
 </resources>
