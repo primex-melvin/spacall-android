@@ -9,10 +9,29 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
 
-    <!-- Custom Colors for Spacall -->
-    <color name="pink_primary">#FF5C8D</color>
+    <!-- Brand Colors -->
+    <color name="brand_primary">#FF5C8D</color>
+    <color name="brand_secondary">#FFB3C8</color>
+    <color name="brand_surface_light">#FFEFF5</color>
+    <color name="avatar_pink">#E85D75</color>
     <color name="lime_accent">#C6F806</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FF000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_wallet_brand">#4A3F8F</color>
+    <color name="text_link_blue">#4A90E2</color>
+
+    <!-- UI Element Colors -->
+    <color name="stroke_light">#E0E0E0</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="icon_gray">#666666</color>
+
+    <!-- Legacy colors for backward compatibility -->
+    <color name="pink_primary">#FF5C8D</color>
     <color name="pink_light">#FFB3C8</color>
     <color name="background_gray">#F5F5F5</color>
     <color name="gray_light">#E0E0E0</color>

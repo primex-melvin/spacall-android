@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- app/src/main/res/drawable/ic_document.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="120dp"
@@ -19,24 +18,24 @@
 
     <!-- Document lines -->
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/white"
         android:pathData="M40,50 h40 v4 h-40 z"/>
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/white"
         android:pathData="M40,60 h40 v4 h-40 z"/>
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/white"
         android:pathData="M40,70 h40 v4 h-40 z"/>
 
     <!-- Upload arrow -->
     <path
-        android:fillColor="#FF5C8D"
+        android:fillColor="@color/brand_primary"
         android:pathData="M60,85 L60,100 M50,92 L60,85 L70,92"/>
     <path
-        android:strokeColor="#FF5C8D"
+        android:strokeColor="@color/brand_primary"
         android:strokeWidth="3"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:fillColor="@android:color/transparent"
+        android:fillColor="@color/transparent"
         android:pathData="M60,85 L60,100 M50,92 L60,85 L70,92"/>
 </vector>

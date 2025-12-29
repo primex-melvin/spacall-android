@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- app/src/main/res/layout/activity_confirm_payment.xml -->
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:padding="24dp"
     tools:context=".ConfirmPaymentActivity">
 
-    <!-- Success Checkmark Circle -->
     <FrameLayout
         android:id="@+id/successCircle"
         android:layout_width="120dp"
@@ -33,45 +31,41 @@
             android:layout_gravity="center"
             android:src="@drawable/ic_check"
             android:contentDescription="@string/checkmark"/>
-
     </FrameLayout>
 
-    <!-- Payment Confirmed Title -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/payment_confirmed"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/successCircle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Amount Display -->
     <TextView
         android:id="@+id/amountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/default_amount"
-        android:textColor="#FF5C8D"
+        android:textColor="@color/brand_primary"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/titleText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Description Text -->
     <TextView
         android:id="@+id/descriptionText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/payment_success_description"
-        android:textColor="#666666"
+        android:textColor="@color/text_secondary"
         android:textSize="16sp"
         android:textAlignment="center"
         android:lineSpacingExtra="4dp"
@@ -79,7 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Proceed Button -->
     <Button
         android:id="@+id/proceedButton"
         android:layout_width="0dp"
@@ -87,7 +80,7 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_background"
         android:text="@string/proceed_text"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:paddingTop="18dp"
@@ -95,5 +88,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

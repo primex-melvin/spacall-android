@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- app/src/main/res/drawable/ic_arrow_down.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="16dp"
@@ -7,6 +6,6 @@
     android:viewportWidth="16"
     android:viewportHeight="16">
     <path
-        android:fillColor="#666666"
+        android:fillColor="@color/icon_gray"
         android:pathData="M4,6 L8,10 L12,6 Z"/>
 </vector>

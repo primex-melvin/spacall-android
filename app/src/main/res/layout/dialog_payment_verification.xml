@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- app/src/main/res/layout/dialog_payment_verification.xml -->
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,7 +8,6 @@
     android:background="@drawable/bottom_sheet_background"
     android:padding="24dp">
 
-    <!-- Close Button -->
     <ImageButton
         android:id="@+id/closeButton"
         android:layout_width="40dp"
@@ -21,14 +19,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Review and confirm Title -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/review_and_confirm"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -36,103 +33,94 @@
         app:layout_constraintStart_toEndOf="@id/closeButton"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Payment method Label -->
     <TextView
         android:id="@+id/paymentMethodLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/payment_method"
-        android:textColor="#666666"
+        android:textColor="@color/text_secondary"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/titleText"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Payment method Value -->
     <TextView
         android:id="@+id/paymentMethodValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mastercard_8604"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="@id/paymentMethodLabel"
         app:layout_constraintBottom_toBottomOf="@id/paymentMethodLabel"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Divider 1 -->
     <View
         android:id="@+id/divider1"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="24dp"
-        android:background="#E0E0E0"
+        android:background="@color/stroke_light"
         app:layout_constraintTop_toBottomOf="@id/paymentMethodLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Top-up amount Label -->
     <TextView
         android:id="@+id/topUpAmountLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/top_up_amount"
-        android:textColor="#666666"
+        android:textColor="@color/text_secondary"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/divider1"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Top-up amount Value -->
     <TextView
         android:id="@+id/topUpAmountValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/default_amount"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="@id/topUpAmountLabel"
         app:layout_constraintBottom_toBottomOf="@id/topUpAmountLabel"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Divider 2 -->
     <View
         android:id="@+id/divider2"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="24dp"
-        android:background="#E0E0E0"
+        android:background="@color/stroke_light"
         app:layout_constraintTop_toBottomOf="@id/topUpAmountLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Total Label -->
     <TextView
         android:id="@+id/totalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/total"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/divider2"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Total Value -->
     <TextView
         android:id="@+id/totalValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/default_amount"
-        android:textColor="#000000"
+        android:textColor="@color/text_primary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="@id/totalLabel"
         app:layout_constraintBottom_toBottomOf="@id/totalLabel"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Top up Button -->
     <Button
         android:id="@+id/topUpButton"
         android:layout_width="0dp"
@@ -141,7 +129,7 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/payment_button_background"
         android:text="@string/top_up"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:paddingTop="18dp"
@@ -150,5 +138,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

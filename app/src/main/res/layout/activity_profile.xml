@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- app/src/main/res/layout/activity_profile.xml -->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,7 +15,6 @@
         android:padding="24dp"
         tools:context=".ProfileActivity">
 
-        <!-- Back Button -->
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="56dp"
@@ -28,20 +26,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <!-- Profile details Title -->
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/profile_details"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/backButton"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <!-- Profile Image Container -->
         <FrameLayout
             android:id="@+id/profileImageContainer"
             android:layout_width="180dp"
@@ -51,7 +47,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <!-- Profile Image -->
             <ImageView
                 android:id="@+id/profileImage"
                 android:layout_width="match_parent"
@@ -61,7 +56,6 @@
                 android:background="@drawable/profile_image_background"
                 android:contentDescription="@string/profile_image"/>
 
-            <!-- Camera Button -->
             <ImageButton
                 android:id="@+id/cameraButton"
                 android:layout_width="56dp"
@@ -72,22 +66,19 @@
                 android:background="@drawable/camera_button_background"
                 android:src="@drawable/ic_camera"
                 android:contentDescription="@string/take_photo"/>
-
         </FrameLayout>
 
-        <!-- First name Label -->
         <TextView
             android:id="@+id/firstNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/first_name"
-            android:textColor="#999999"
+            android:textColor="@color/text_hint"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/profileImageContainer"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <!-- First name Input -->
         <EditText
             android:id="@+id/firstNameInput"
             android:layout_width="0dp"
@@ -97,26 +88,24 @@
             android:hint="@string/first_name_hint"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:importantForAutofill="no"
             app:layout_constraintTop_toBottomOf="@id/firstNameLabel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Last name Label -->
         <TextView
             android:id="@+id/lastNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/last_name"
-            android:textColor="#999999"
+            android:textColor="@color/text_hint"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/firstNameInput"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <!-- Last name Input -->
         <EditText
             android:id="@+id/lastNameInput"
             android:layout_width="0dp"
@@ -126,14 +115,13 @@
             android:hint="@string/last_name_hint"
             android:inputType="textPersonName"
             android:padding="20dp"
-            android:textColor="#000000"
+            android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:importantForAutofill="no"
             app:layout_constraintTop_toBottomOf="@id/lastNameLabel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Birthday Button -->
         <Button
             android:id="@+id/birthdayButton"
             android:layout_width="0dp"
@@ -149,14 +137,13 @@
             android:paddingBottom="20dp"
             android:text="@string/choose_birthday"
             android:textAllCaps="false"
-            android:textColor="#FF5C8D"
+            android:textColor="@color/brand_primary"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/lastNameInput"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Confirm Button -->
         <Button
             android:id="@+id/confirmButton"
             android:layout_width="0dp"
@@ -165,7 +152,7 @@
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_background"
             android:text="@string/confirm"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingTop="18dp"
@@ -176,5 +163,4 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>

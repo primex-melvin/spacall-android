@@ -103,17 +103,17 @@ class OtpActivity : AppCompatActivity() {
             if (i < otpDigits.size) {
                 digitViews[i].text = otpDigits[i]
                 digitViews[i].setBackgroundResource(R.drawable.otp_box_filled)
-                digitViews[i].setTextColor(resources.getColor(android.R.color.white, null))
+                digitViews[i].setTextColor(resources.getColor(R.color.white, null))
             } else {
                 digitViews[i].text = "0"
                 if (i == otpDigits.size) {
                     // Current digit (next to be filled)
                     digitViews[i].setBackgroundResource(R.drawable.otp_box_empty)
-                    digitViews[i].setTextColor(resources.getColor(R.color.pink_light, null))
+                    digitViews[i].setTextColor(resources.getColor(R.color.brand_secondary, null))
                 } else {
                     // Future digits
                     digitViews[i].setBackgroundResource(R.drawable.otp_box_empty)
-                    digitViews[i].setTextColor(resources.getColor(R.color.gray_light, null))
+                    digitViews[i].setTextColor(resources.getColor(R.color.stroke_light, null))
                 }
             }
         }

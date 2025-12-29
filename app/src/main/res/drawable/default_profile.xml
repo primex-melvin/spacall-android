@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- app/src/main/res/drawable/default_profile.xml -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="180dp"
@@ -10,6 +9,6 @@
         android:fillColor="#CCCCCC"
         android:pathData="M90,90m-90,0a90,90 0,1,1 180,0a90,90 0,1,1 -180,0"/>
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/white"
         android:pathData="M90,50c11,0 20,9 20,20s-9,20 -20,20 -20,-9 -20,-20 9,-20 20,-20zM90,95c-22,0 -40,11 -40,25v10h80v-10c0,-14 -18,-25 -40,-25z"/>
 </vector>

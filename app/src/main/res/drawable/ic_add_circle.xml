@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- app/src/main/res/drawable/ic_add_circle.xml -->
-
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="56dp"
     android:height="56dp"
@@ -8,10 +7,10 @@
     android:viewportHeight="56">
 
     <path
-        android:fillColor="#FF5C8D"
+        android:fillColor="@color/brand_primary"
         android:pathData="M28,4 A24,24 0,1,1 4,28 A24,24 0,1,1 28,4 Z"/>
 
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/white"
         android:pathData="M26,18 H30 V38 H26 Z M18,26 H38 V30 H18 Z"/>
 </vector>

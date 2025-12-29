@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- app/src/main/res/drawable/upload_area_background.xml -->
-
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#FFFFFF"/>
+    <solid android:color="@color/white"/>
     <stroke
         android:width="3dp"
-        android:color="#FF5C8D"
+        android:color="@color/brand_primary"
         android:dashWidth="20dp"
         android:dashGap="10dp"/>
     <corners android:radius="24dp"/>
