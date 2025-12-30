@@ -11,6 +11,9 @@
     <string name="already_have_account">Already have an account?</string>
     <string name="sign_in">Sign in</string>
 
+    <!-- Feature Flags -->
+    <bool name="use_temporary_welcome_page">true</bool>
+
     <!-- Phone Activity -->
     <string name="my_mobile">My mobile</string>
     <string name="phone_description">Please enter your valid phone number. We will send you a 4-digit code to verify your account.</string>
