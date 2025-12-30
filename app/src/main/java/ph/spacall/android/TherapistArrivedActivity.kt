@@ -2,6 +2,7 @@
 
 package ph.spacall.android
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -48,9 +49,10 @@ class TherapistArrivedActivity : AppCompatActivity() {
         }
 
         startSessionButton.setOnClickListener {
-            Toast.makeText(this, "Session started with $therapistName", Toast.LENGTH_LONG).show()
-            // Navigate to session screen or perform session start logic
-            finish()
+            // Navigate to Session Countdown page
+            val intent = Intent(this, SessionCountdownActivity::class.java)
+            intent.putExtra("EXTRA_NAME", therapistName)
+            startActivity(intent)
         }
     }
 }

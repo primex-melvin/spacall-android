@@ -160,4 +160,13 @@
     <string name="blue_marker">Blue Marker</string>
     <string name="red_marker">Red Marker</string>
     <string name="dashed_route">Dashed Route</string>
+
+    <!-- Session Countdown Strings -->
+    <string name="enjoy_your_session">Enjoy your session</string>
+    <string name="session_description">Relax and enjoy every moment of your session, Let it bring you warmth, comfort, and pleasure from start to finish.</string>
+    <string name="early_stop">Early Stop</string>
+
+    <!-- Session Finished Strings -->
+    <string name="session_finished">Session Finished</string>
+    <string name="session_finished_description">Thank you for booking with %s. We appreciate your trust and look forward to providing you with a wonderful session</string>
 </resources>

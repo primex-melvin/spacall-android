@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- app/src/main/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -104,6 +103,18 @@
             android:name=".TherapistArrivedActivity"
             android:exported="false"
             android:parentActivityName=".BookingRequestAcceptedActivity" />
+
+        <activity
+            android:name=".SessionCountdownActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TherapistArrivedActivity" />
+
+        <activity
+            android:name=".SessionFinishedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SessionCountdownActivity" />
 
     </application>
 
