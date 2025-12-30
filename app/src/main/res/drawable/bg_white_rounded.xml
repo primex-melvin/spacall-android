@@ -1,4 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- app/src/main/res/drawable/bg_white_rounded.xml -->
     <solid android:color="@color/white"/>
     <corners android:radius="12dp"/>
 </shape>

@@ -94,6 +94,17 @@
             android:exported="false"
             android:parentActivityName=".SearchingTherapistsActivity" />
 
+        <activity
+            android:name=".BookingRequestAcceptedActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".TherapistDetailActivity" />
+
+        <activity
+            android:name=".TherapistArrivedActivity"
+            android:exported="false"
+            android:parentActivityName=".BookingRequestAcceptedActivity" />
+
     </application>
 
 </manifest>

@@ -1,6 +1,10 @@
+// app/src/main/java/ph/spacall/android/TherapistDetailActivity.kt
+
 package ph.spacall.android
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +14,10 @@ import com.bumptech.glide.request.RequestOptions
 import jp.wasabeef.glide.transformations.BlurTransformation
 
 class TherapistDetailActivity : AppCompatActivity() {
+
+    private var therapistName: String = ""
+    private var therapistLat: Double = 0.0
+    private var therapistLng: Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,10 +30,12 @@ class TherapistDetailActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener { finish() }
 
         // Get Dynamic Data
-        val name = intent.getStringExtra("EXTRA_NAME") ?: "Therapist"
+        therapistName = intent.getStringExtra("EXTRA_NAME") ?: "Therapist"
         val avatarUrl = intent.getStringExtra("EXTRA_AVATAR")
+        therapistLat = intent.getDoubleExtra("EXTRA_LATITUDE", 14.6050)
+        therapistLng = intent.getDoubleExtra("EXTRA_LONGITUDE", 120.9900)
 
-        findViewById<TextView>(R.id.tvDetailName).text = name
+        findViewById<TextView>(R.id.tvDetailName).text = therapistName
 
         // Load Circular Profile Pic
         val ivAvatar = findViewById<ImageView>(R.id.ivDetailAvatar)
@@ -55,5 +65,17 @@ class TherapistDetailActivity : AppCompatActivity() {
         Glide.with(this).load(photoLocked1).apply(blurEffect).into(ivGallery1)
         Glide.with(this).load(photoLocked2).apply(blurEffect).into(ivGallery2)
         Glide.with(this).load(photoLocked3).apply(blurEffect).into(ivGallery3)
+
+        // 3. Setup Book Now Button
+        val btnBookNow = findViewById<Button>(R.id.btnBookNow)
+        btnBookNow.setOnClickListener {
+            // Navigate to Booking Request Accepted Activity
+            val intent = Intent(this, BookingRequestAcceptedActivity::class.java).apply {
+                putExtra("EXTRA_NAME", therapistName)
+                putExtra("EXTRA_LATITUDE", therapistLat)
+                putExtra("EXTRA_LONGITUDE", therapistLng)
+            }
+            startActivity(intent)
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 package ph.spacall.android
 
-import android.graphics.drawable.Drawable
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -262,16 +262,14 @@ class SearchingTherapistsActivity : AppCompatActivity() {
 
     private fun setupRecyclerView() {
         therapistAdapter = TherapistAdapter(therapists) { therapist ->
-            // When therapist card is clicked, center map on that therapist
-            val location = GeoPoint(therapist.latitude, therapist.longitude)
-            mapView.controller.animateTo(location)
-            mapView.controller.setZoom(16.0) // Zoom in closer
-
-            Toast.makeText(
-                this,
-                "Selected: ${therapist.name}",
-                Toast.LENGTH_SHORT
-            ).show()
+            // Navigate to therapist detail page
+            val intent = Intent(this, TherapistDetailActivity::class.java).apply {
+                putExtra("EXTRA_NAME", therapist.name)
+                putExtra("EXTRA_AVATAR", therapist.avatarUrl)
+                putExtra("EXTRA_LATITUDE", therapist.latitude)
+                putExtra("EXTRA_LONGITUDE", therapist.longitude)
+            }
+            startActivity(intent)
         }
 
         therapistsRecyclerView.apply {
@@ -321,7 +319,7 @@ class SearchingTherapistsActivity : AppCompatActivity() {
     }
 }
 
-// Updated Data class for Therapist with location
+// Data class for Therapist with location
 data class Therapist(
     val id: Int,
     val name: String,

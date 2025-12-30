@@ -143,4 +143,21 @@
     <!-- Map Strings -->
     <string name="therapist_location">Therapist Location</string>
 
+    <!-- Booking Request Accepted Strings -->
+    <string name="request_accepted_title">%s accepted the session request.</string>
+    <string name="request_accepted">Request accepted</string>
+    <string name="request_accepted_message">You may close the app, the session will continue to run in the background.</string>
+    <string name="user_location_marker">User Location Marker</string>
+    <string name="therapist_location_marker">Therapist Location Marker</string>
+    <string name="route_line">Route Line</string>
+    <string name="therapist_arriving_in">Therapist arriving in %d…</string>
+
+    <!-- Therapist Arrived Strings -->
+    <string name="your_therapist_has_arrived">Your therapist has arrived</string>
+    <string name="confirm_to_begin_session">Please confirm to begin your session and enjoy your time</string>
+    <string name="start_session">Start session</string>
+    <string name="map_illustration">Map Illustration</string>
+    <string name="blue_marker">Blue Marker</string>
+    <string name="red_marker">Red Marker</string>
+    <string name="dashed_route">Dashed Route</string>
 </resources>
